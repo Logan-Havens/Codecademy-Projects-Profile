@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Projects</title>  
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">  
+    <script src="js/script.js"></script>
+</head>
+<body>
+    <nav>
+        <h1>Logan's Projects</h1>
+        <ul class="nav-group">
+            <li class="nav-btn"><a href="#about-me">Home</a></li>  
+            <li class="nav-btn"><a href="contact.html">Contact</a></li>
+            <li><button id="toggle-mode">Toggle Dark Mode</button></li>
+        </ul>
+    </nav>
+    
+    <main>
+        <section id="about-me">  
+            <div class="about-me-container">
+                <div class="about-me-text-container">
+                    <h2>Logan Havens</h2>
+                    <p>I'm an aspiring web developer in St. Louis, passionate about building interactive projects with HTML, CSS, JavaScript, and Git. Through Codecademy, I've created tools like credit card validators, quote generators, and virtual pianos, sharpening my problem-solving skills.</p>
+                    <p>Beyond tech, I'm an entrepreneur exploring real estate via house hacking and business plans for pickleball and volleyball leagues. I focus on personal growth—maintaining a natural, beachy hairstyle with organic products, reciting mindset declarations from books like Winning the War in Your Mind, and enjoying competitive date nights—while turning ideas into reality through faith and determination.</p>
+                </div>
+                <img src="https://via.placeholder.com/300x400?text=Logan+Portrait" alt="Portrait of Logan Havens" class="portrait">  
+            </div>
+        </section>
+        <section id="projects">
+            <h2>Projects</h2>
+            <details class="project">
+                <summary class="project-title">
+                    <h3>Credit Card Validator</h3>  
+                </summary>
+                <img src="https://via.placeholder.com/200?text=Credit+Card+Validator" alt="Screenshot of credit card validator project" class="project-image">  
+                <p>A JavaScript tool to validate credit card numbers using the Luhn algorithm. Built with HTML forms and JS logic.</p>
+            </details>
+            <details class="project">  
+                <summary class="project-title">
+                    <h3>Inspirational Quote Generator</h3>
+                </summary>
+                <img src="https://via.placeholder.com/200?text=Quote+Generator" alt="Screenshot of quote generator project" class="project-image">
+                <p>A random quote app fetching from an API, styled with CSS and interactive via JS buttons.</p>
+            </details>
+            <details class="project">  
+                <summary class="project-title">
+                    <h3>Virtual Piano</h3>
+                </summary>
+                <img src="https://via.placeholder.com/200?text=Virtual+Piano" alt="Screenshot of virtual piano project" class="project-image">
+                <p>An interactive keyboard simulator using JS event listeners and audio playback.</p>
+            </details>
+        </section>
+        <section id="skills">
+            <h2>Skills</h2>
+            <div id="skills-container">
+                <i class="fab fa-html5"></i>
+                <i class="fab fa-css3-alt"></i>
+                <i class="fab fa-js"></i>
+                <i class="fab fa-git"></i>  
+                <i class="fab fa-github"></i>
+                <i class="fas fa-terminal"></i>
+            </div>
+        </section>
+    </main>
+    <footer>  <!-- Added footer -->
+        <p>&copy; 2025 Logan Havens | Made in St. Louis</p>
+    </footer>
+</body>
+</html>

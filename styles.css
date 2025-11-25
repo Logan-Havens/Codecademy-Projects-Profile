@@ -1,0 +1,265 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f9f9f9;
+    color: #333;
+    transition: background-color 0.3s, color 0.3s;
+    text-align: center;  
+}
+
+
+.dark-mode {
+    background-color: #222;
+    color: #ddd;
+}
+
+.dark-mode h1, .dark-mode h2, .dark-mode h3, .dark-mode p, .dark-mode a, .dark-mode li {
+    color: #ddd;
+}
+
+.dark-mode nav {
+    background-color: #111;
+}
+
+.dark-mode .project {
+    background-color: #333;
+    border-color: #444;
+}
+
+.dark-mode input, .dark-mode textarea, .dark-mode button {
+    background-color: #333;
+    color: #ddd;
+    border: 1px solid #444;
+}
+
+.dark-mode footer {
+    background-color: #111;
+    color: #ddd;
+}
+
+.dark-mode .about-me-text-container {
+    background-color: #333;
+    border-color: #444;
+}
+
+
+nav {
+    background-color: #007bff;
+    color: white;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav h1 {
+    margin-left: 20px;
+}
+
+.nav-group {
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+.nav-btn {
+    margin: 0 10px;
+}
+
+.nav-btn a {
+    color: white;
+    text-decoration: none;
+    padding: 8px 12px;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+.nav-btn a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+#toggle-mode {
+    background-color: white;
+    color: #007bff;
+    border: none;
+    padding: 8px 12px;
+    margin: 0 20px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+#toggle-mode:hover {
+    background-color: #ddd;
+}
+
+
+#about-me {
+    padding: 40px 20px;
+}
+
+.about-me-container {
+    max-width: 800px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.about-me-text-container {
+    background-color: #fff;  
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    max-width: 600px;
+    margin: 0 auto;  
+}
+
+.dark-mode .about-me-text-container {
+    background-color: #333;
+    border-color: #444;
+}
+
+.about-me-text-container h2 {
+    margin-bottom: 20px;
+}
+
+.about-me-text-container p {
+    margin-bottom: 15px;
+}
+
+.portrait {
+    max-width: 200px;
+    border-radius: 50%;
+}
+
+
+#projects {
+    padding: 40px 20px;
+    background-color: #fff;
+}
+
+.dark-mode #projects {
+    background-color: #333;
+}
+
+#projects h2 {
+    margin-bottom: 20px;
+}
+
+.project {
+    margin: 5px auto;  
+    max-width: 800px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 10px;
+    background-color: #fff;
+}
+
+.project summary {
+    padding: 5px;  
+    margin: 0;
+}
+
+.project-title {
+    cursor: pointer;
+    font-weight: bold;
+    margin: 0;  
+}
+
+.project-image {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+summary::-webkit-details-marker {
+    display: none;
+}
+
+
+#skills {
+    padding: 40px 20px;
+}
+
+#skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    font-size: 2em;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+
+#contact {
+    padding: 40px 20px;
+}
+
+.contact-container {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+#contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#contact-form label {
+    text-align: left;
+}
+
+#contact-form input, #contact-form textarea {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+#contact-form button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+#contact-form button:hover {
+    background-color: #0056b3;
+}
+
+
+footer {
+    background-color: #007bff;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+
+@media (max-width: 768px) {
+    .about-me-container {
+        flex-direction: column;
+    }
+
+    .nav-group {
+        flex-wrap: wrap;  
+        justify-content: center;
+    }
+
+    .nav-btn, #toggle-mode {
+        margin: 5px;
+    }
+}
